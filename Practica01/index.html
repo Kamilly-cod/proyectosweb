@@ -1,63 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica01</title>
+    <link rel="stylesheet" href="styles.css">
+
 
 </head>
+
 <body>
-    <h1>Formato de texto</h1>
+    <nav>
+        <a href="#1">Formato de texto</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#4">4</a>
+        <a href="#5">5</a>
+        <a href="#6">6</a>
+        <a href="#7">7</a>
+    </nav>
+
+    <h1 id="1">Formato de texto</h1>
     <h2>Negrita</h2>
     <p>Una <b>palabra clave</b> relativamente importante para mi</p>
     <h2>Italica o cursiva</h2>
     <p>Las tendencias más <i>cool</i> del verano</p>
-    <p>Parafraseando a Einstein <em>Dios no juega a los dados</em></p>
+    <p>Parafraseando a Einstein <i>Dios no juega a los dados</i></p>
     <p>Benito le dijo a Manuel que <i>era un campeón</i></p>
 
     <h2>Subrayado y tachado</h2>
-    <p><ins>Esto es un <b>texto</b> subrayado</ins></p>
+    <p><ins>Esto es un <strong>texto</strong> subrayado</ins></p>
     <p>El hombre llegó a la luna en <del>1970</del><ins>1969</ins></p>
 
     <h1>Caracteres especiales</h1>
     <ul>
-     <li>;</li>
-     <li>></li>
-     <li>©</li>
+        <li>&semi;</li>
+        <li>&lt;</li>
+        <li>&gt;</li>
+        <li>&amp;</li>
+        <li>&apos;</li>
+        <li>&quot;</li>
+        <li>&bsol;</li>
+        <li>&sol;</li>
+        <li>&copy;</li>
+        <li>&nbsp;</li>
+        <li>&euro;</li>
     </ul>
     <h1>Espacios en blanco</h1>
+    <p>Esse é um texto normal, título para introduzir espaços em branco</p>
+    <p>Hola que tal</p>
+    <p>Hola&nbsp;&nbsp;que tal</p>
+    <p>Hola&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;que tal</p>
+    <p>Hola&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;que tal</p>
+    <p>Hola&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;que tal</p>
 
 
     <h1>Listas</h1>
     <h3>Lista numerada</h3>
+    <p>
     <ol>
         <li>Quis quis est id cillum aute proident proident</li>
         <li>Elit sit Lorem fugiat aliquip incididunt dolor.</li>
-        <li>Enim laboris pariatur in do labore ip id et duis Lorem. Amet do ut dolore amet eiusmod reprehenderit nulla </li>
+        <li>Enim laboris pariatur in do labore ip id et duis Lorem. Amet do ut dolore amet eiusmod reprehenderit nulla
+        </li>
         <li>...</li>
     </ol>
+    </p>
     <h3>Lista no numerada</h3>
+    <p>
     <ul>
         <li>Veniam enim aliqua ullamco laborum sunt et aliqua.</li>
         <li>Laborum et non occaecat consequat eiusmod incididunt Lorem.</li>
         <li>Culpa qui veniam occaecat eiusmod aute ad et ex pariatur excepteur pariatur.</li>
     </ul>
+    </p>
 
     <h2>Lista anidada</h2>
-    <h3>Ejemplo 1 - Protocolos de la capa de apllicación</h3>
+    <h3>Ejemplo 1 - Protocolos de la capa de aplicación</h3>
+    <p>
+    <ul>
+
+        <li>Transimisión de ficheros</li>
+        <ul style="list-style-type: circle;">
+            <li>FTP</li>
+
+        </ul>
+        <li>Correo electrónico</li>
+        <ul style="list-style-type: circle;">
+            <li>IMAP</li>
+            <li>POP</li>
+            <li>SMTP</li>
+
+        </ul>
+
+    </ul>
+    </p>
 
     <h3>Ejemplo 2 - Índice</h3>
+    <p>
+    <ol>
+        <li>La comunicación</li>
+        <ol>
+            <li>Conceptos</li>
+            <li>Elementos de un sistema de comunicación</li>
+            <li>Modos de transmisión</li>
+        </ol>
+
+        <li>Concepto de red. Ventajas</li>
+        <ol>
+            <li>Concepto de red</li>
+            <li>Ventajas de las redes</li>
+        </ol>
+        <li>Topologías de red</li>
+        <ol>
+            <li>Topología en estrella</li>
+            <li>Topología en bus</li>
+            <li>Topología en anillo</li>
+            <li>Topología en árbol (estrella jerárquica)</li>
+            <li>Topología en malla</li>
+        </ol>
+    </ol>
+    </p>
+
+    <h3>Ejemplo 3 - Mixto</h3>
+    <p>
+    <ol>
+        <li>Mamíferos</li>
+        <ul style="list-style-type: circle;">
+            <li>Gato</li>
+            <li>Perro</li>
+
+        </ul>
+        <li>Pájaros</li>
+        <ul style="list-style-type: circle;">
+            <li>Paloma</li>
+            <li>Gorrión</li>
+
+        </ul>
+        <li>peces</li>
+        <ul style="list-style-type: circle;">
+            <li>Tiburón</li>
+            <li>Sardina</li>
+            <li>Atún</li>
+
+        </ul>
+    </ol>
+    </p>
 
 
     <h1>Imagen centrada</h1>
+
+    <div class="imagen1">
+        <img src="barbie.gif" alt="Barbiecore" width="350">
+    </div>
+
     <h1>Cita célebra</h1>
-    <p> Todas las piezas deben unirse sin ser forzadas. Debe recordar que los componentes que está reensamblando fueron desmontados por usted, por lo que si no puede unirlos debe exister una razón. Pero sobre todo, no use un martillo.</p>
-    <p>Manual de mantenimiento de IBM, año 1925</p>
+
+    <blockquote> <strong>Todas las piezas deben unirse sin ser forzadas. Debe recordar que los componentes que está
+            reensamblando fueron desmontados por usted, por lo que si no puede unirlos debe exister una razón. Pero
+            sobre todo, no use un martillo. </strong>
+    </blockquote>
+
+    <div> <em> Manual de mantenimiento de IBM, año 1925 </em> </div>
 
 
-    
 
 
-    
+
+
+
 </body>
+
 </html>

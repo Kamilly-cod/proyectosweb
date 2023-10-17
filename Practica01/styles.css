@@ -1,0 +1,53 @@
+body {
+    background-image: url('pinksky.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+    
+
+}
+
+h1 {
+    color: rgb(250, 211, 231);
+
+}
+
+h2 {
+    color: rgb(144, 233, 249);
+
+}
+h3 {
+    
+}
+
+b {
+color: pink;
+}
+
+i {
+    color: rgb(206, 255, 247);
+}
+
+strong {
+    color: pink;
+    
+}
+blockquote {
+    background-color: black;
+    padding: 20px;
+}
+.imagen1{
+    text-align: center;
+}
+.barbie01 {
+
+}
+nav {
+    text-align: center;
+}
+p {
+
+}
+
+

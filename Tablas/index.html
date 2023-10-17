@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+
+        table {
+            width: 50%;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+
+            
+        }
+        tr {
+            height: 20px;
+            width: 50%;
+          
+        }
+        th {
+            border: 1px solid black;
+
+        }
+
+
+    </style>
+    
+
+</head>
+
+<body>
+    <table style="background-color: aquamarine;"> <!-- Aquí empieza la tabla-->
+        <!--As tabelas se criam, primeiro, em filas/linha: tr (table row)-->
+        <!--Dentro de cada fila añadimos tantas etiquetas td (table data) como colunas-->
+        <!--Se você quiser colocar cabeçalhos usamos th (table header -->
+        <tr>
+            <th>Encabezado 01</th>
+            <th>Encabezado 02</th>
+            <th>Encabezado 03</th>
+        </tr>
+        <tr>
+            <td>fila 1, Columna 1</td>
+            <td>fila 1, Columna 2</td>
+            <td>fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>fila 2, Columna 1</td>
+            <td>fila 2, Columna 2</td>
+            <td>fila 2, Columna 3</td>
+        </tr>
+
+    </table> <!--Aquí termina la tabla-->
+    <br><br><br>
+    <!--Podemos aprovechar la abreviatura de emmet para crear rapidamente tablas. Así
+    table>tr*3>td*4-->
+    <table style="width: 75%;
+                border-collapse: collapse;">
+        <tr>
+            <td style="width: 50%;">LAhsohshnvsdpfvjespñvnpewjmvfñpmjesmnpejvẁ</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table style="background-color: aquamarine; border: 2px solid white;
+    border-collapse: collapse;">
+        <tr>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+            <td style="border: 2px solid white;;"></td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <table style="background-color: aquamarine; 
+            border: 4px;border-color: blue; 
+            border-style: dotted;
+            border-radius: 25px;"> 
+        <tr>
+            <th style="padding: 20px;">Encabezado 01</th>
+            <th>Encabezado 02</th>
+            <th>Encabezado 03</th>
+        </tr>
+        <tr>
+            <td>fila 1, Columna 1</td>
+            <td style="border-spacing: 30px;">fila 1, Columna 2</td>
+            <td>fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>fila 2, Columna 1</td>
+            <td>fila 2, Columna 2</td>
+            <td>fila 2, Columna 3</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+        <table style="border-spacing: 30px;">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h1>Mezcla las columnas</h1>
+
+        <table>
+            <tr>
+                <td colspan="3">Name</td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                
+            </tr>
+            <tr>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td rowspan="3">rowspan</td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <!--<td style="width: 20%;"></td>
+                aHORA ESTA OCUPADO POR EL ROSWAN-->
+            </tr>
+            <tr>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <td style="width: 20%;"></td>
+                <!--<td style="width: 20%;"></td>
+                aHORA ESTA OCUPADO POR EL ROSWAN-->
+            </tr>
+        </table>
+
+
+    
+</body>
+
+</html>

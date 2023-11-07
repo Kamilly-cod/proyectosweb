@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destino</title>
+    <style>
+        .Nombre {
+            float: left;
+            width: 12%;
+
+        }
+        .Apellidos {
+            float: left;
+            width: 30%;
+        }
+
+        .Email {
+            float: left;
+            width: 50%;
+        }
+        body {
+            background-color: rgb(210, 227, 248) ;
+        }
+
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+    <h1>Registro de DEVs</h1>
+    <h3>Completa los siguientes campos</h3>
+
+
+    <form action="index.html" method="get" id="mi-formulario"></form>
+
+    <div class="Nombre"><label for="texto1">Nombre (obligatorio)</label><br>
+    <input type="text" name="nombre" id="texto1">
+    </div>
+
+    <div class="Apellido"><label for="texto2">Apellidos (obligatorio)</label><br>
+    <input type="text" name="Apellidos" id="texto2">
+    </div>
+    <br>
+    <div class="Email"><label for="texto3">Email (obligatorio)</label><br>
+    <input type="text" name="Email" id="texto3">
+    </div>
+</fieldset>
+<br>
+<fieldset>
+
+<!--Front-end
+    Back-end
+    Full Stack
+Bolinha
+-->
+    <label for="lado aplicación">Indica en qué lado de la aplicación desarrolas</label>
+    <br><br>
+    <input type="radio" name="lado" id="Front-end" value="Front-end"> <label for="front">Front-end</label>
+    <input type="radio" name="lado" id="Back-end" value="Back-end"> <label for="back">Back-end</label>
+    <input type="radio" name="lado" id="Full Stack" value="Full Stack"> <label for="full">Full Stack</label>
+
+</fieldset>
+<br>
+<fieldset>
+<!--Junior
+    Senior
+    Experto
+Pesquisar como colocar opciones
+-->    
+    <label for="experiencia">Nivel de experiencia</label>
+    <br><br>
+    <select name="experiencia" id="select" value="select">
+    <option value="Selecciona una de las opciones">Selecciona una de las opcione</option>
+    <option value="Junior">Junior</option>
+    <option value="Senior">Senior</option>
+    <option value="Experto">Experto</option>
+    </select>
+
+</fieldset>
+<br>
+<fieldset>
+
+<!--HTML
+    CSS
+    JavaScript
+    PHP
+    C#
+    Python
+    Java
+Cuadraditos    
+-->    
+    <label for="tecnologías">Seleciona las tecnologías que utilizas:</label>
+    <br>
+    <input type="checkbox" name="lenguaje" id="html" value="HTML"> <label for="html">HTML</label>
+    <input type="checkbox" name="lenguaje" id="css" value="CSS"> <label for="css">CSS</label>
+    <input type="checkbox" name="lenguaje" id="js" value="JavaScript"> <label for="js">JavaScript</label>
+    <input type="checkbox" name="lenguaje" id="php" value="PHP"> <label for="php">PHP</label>
+    <input type="checkbox" name="lenguaje" id="c" val
+    ue="C#"> <label for="c">C#</label>
+    <input type="checkbox" name="lenguaje" id="python" value="Python"> <label for="python">Python</label>
+    <input type="checkbox" name="lenguaje" id="java" value="Java"> <label for="java">Java</label>
+
+</fieldset>
+<br>
+<fieldset>
+
+<!--Aqui coloca um padding gigante e depois coloca um botao enviar-->
+    <label for="">Cuenta algo más acerca de tu experiencia:</label>
+    <br>
+    <form action="index.html" method="get" id="tu-formulario"></form>
+    <textarea name="textarea" rows="10" cols="50"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+    
+
+</fieldset>
+    <br>
+
+    <script> 
+        document.getElementById("mi-formulario").addEventListener("submit", function (event) { 
+            event.preventDefault(); 
+            const formulario = event.target; 
+            const nombre = formulario.elements["nombre"].value; 
+            const lenguaje = formulario.elements["lenguaje"].value;
+            const futbol = formulario.elements["fútbol"].value;
+            const bailar = formulario.elements["baile"].value;            
+            const lectura = formulario.elements["leer"].value;
+            document.getElementById("nombre-valor").textContent = "Nombre: " + nombre; 
+            document.getElementById("lenguaje-valor").textContent = "Lenguaje seleccionado: " + lenguaje; 
+            document.getElementById("checkbox-valor").textContent = "Aficiones: " + fútbol + baile + leer;
+            document.getElementById("checkbox-valor").textContent = "Aficiones: " + fútbol + baile + leer;
+            
+        }); 
+    </script>
+</body>
+</html>
